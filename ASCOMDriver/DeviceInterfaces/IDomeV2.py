@@ -10,17 +10,26 @@ class IDomeV2(IAscomDriver, IDeviceControl):
     """
     # TODO: Finish all declarations
 
-    @abc.abstractmethod
+    @property
     def CloseShutter(self):
-      # Close shutter or otherwise shield telescope from the sky.
+        # Close shutter or otherwise shield telescope from the sky.
+        print("CloseShutter")
         pass
 
-    @abc.abstractmethod
+    @property
     def OpenShutter(self):
-      # Open shutter or otherwise expose telescope to the sky.
+        # Open shutter or otherwise expose telescope to the sky.
+        print("OpenShutter")
         pass
 
-    @abc.abstractproperty
+    @property
     def ShutterStatus(self):
-      # Indicates whether the dome is in the home position. Raises an error if not supported.
+        # Indicates whether the dome is in the home position. Raises an error if not supported.
+        print("ShutterStatus")
+        pass
+
+    @property
+    def AtHome(self):
+        # Indicates whether the dome is in the home position. Raises an error if not supported.
+        print("AtHome")
         pass

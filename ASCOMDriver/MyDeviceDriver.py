@@ -5,8 +5,8 @@ from .DeviceInterfaces.IAscomDriver import IAscomDriver
 
 class MyDeviceDriver(IAscomDriver):
 
-    FORMAT = '%(asctime)-15s %(identifier)s %(message)s'
-    logging.basicConfig(format=FORMAT)
+    # FORMAT = '%(asctime)-15s %(identifier)s %(message)s'
+    logging.basicConfig()
     logger = logging.getLogger('MyASCOMDriver')
 
     def __init__(self, name, description):

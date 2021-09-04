@@ -6,15 +6,15 @@ class IAscomDriver(abc.ABC):
 
     @abc.abstractproperty
     def Connected(self):
-      # Set True to enable the link. Set False to disable the link.
+        # Set True to enable the link. Set False to disable the link.
         pass
 
-    @abc.abstractproperty
+    @property
     def Description(self):
-      # Returns a description of the driver
+        # Returns a description of the driver
         pass
 
-    @abc.abstractproperty
+    @property
     def Name(self):
-      # Returns a description of the driver
+        # Returns a description of the driver
         pass
